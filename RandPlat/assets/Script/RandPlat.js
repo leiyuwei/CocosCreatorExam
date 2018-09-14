@@ -1,4 +1,8 @@
-
+/**
+ * By_AK-12(PrprSaber)
+ * 2018年9月14日14:14:14
+ * @copyright
+ */
 cc.Class({
     extends: cc.Component,
 
@@ -26,7 +30,6 @@ cc.Class({
     },
 
     start () {
-        cc.log('fff'+this.resultLayout.getChildByName('result').getComponent(cc.Label))
         this.plat.on("touchstart", function(){
             cc.log('click')
             this.startPlay()
@@ -64,7 +67,7 @@ cc.Class({
         }, stateProcess.duration)
     },
 
-    //得到rotationClip的旋转值
+    //得到rotationClip的旋转值数组
     getAngleClip(state){
         return state.curves[0].values
     },
@@ -78,7 +81,6 @@ cc.Class({
             this.inforLabel.string = '再次\n抽奖'
             this.lastAngle = this.getAngleClip(stateFinish)[1]
         }, stateFinish.duration)
-        cc.log(stateFinish)
     },
 
     //得到圈数
