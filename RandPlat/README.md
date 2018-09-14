@@ -1,2 +1,3 @@
-# hello-world
-Hello world new project template.
+# RandPlat
+
+[viewRandPlat](https://saber2pr.github.io/CocosCreatorExam/RandPlat/build/web-mobile)
