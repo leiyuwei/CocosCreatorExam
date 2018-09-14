@@ -1,0 +1,2 @@
+# CocosCreatorExam
+some simple demos
